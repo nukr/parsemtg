@@ -143,7 +143,6 @@
   };
 
   exports.index = function(req, res) {
-    first().then(function(value) {});
     return getSetsList().then(function(blocks) {
       return res.json(blocks);
     });

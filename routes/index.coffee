@@ -93,8 +93,6 @@ readReturnValue = (blocks, links) ->
 
 exports.index = (req, res) ->
 
-    first().then ( value ) ->
-
     getSetsList().then (blocks) ->
 
         res.json blocks
